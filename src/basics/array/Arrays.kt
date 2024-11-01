@@ -1,3 +1,4 @@
+package basics.array
 
 fun main() {
     val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
@@ -36,12 +37,15 @@ fun main() {
     // Using the += assignment operation creates a new riversArray,
     // copies over the original elements and adds "Mississippi"
     riversArray += "Mississippi"
-    println(riversArray.joinToString())
+    println(riversArray[3])
     // Nile, Amazon, Yangtze, Mississippi
 
-    //      val mixed = arrayOf(1, "Seif", 2, "Mohamed")
+//          val mixed:Array<Any> = arrayOf(1, "Seif", 2, "Mohamed",'k',4.23379)
+//            for (i in 0 until  mixed.size){
+//                val test = mixed[i].toString() + " Any"
+//                println(test)
+//            }
 
 
-    
 
 }

@@ -1,3 +1,5 @@
+package basics.strings
+
 fun main() {
     /** Comparing Strings **/
     println("Comparing Strings")
@@ -16,10 +18,15 @@ fun main() {
 
     /** String Templates/Interpolation **/
     println("String Templates")
-    println("My name is $firstName $lastName")
+    println("My name is $firstName")
     println("My first name length is ${firstName.length}")
     println("//////////////////////////////////////////////////////")
 
-
+    val text = """
+        My name is Seif
+        
+        Job: Android software Engineer
+    """
+    println(text)
 
 }

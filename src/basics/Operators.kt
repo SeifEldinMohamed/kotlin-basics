@@ -1,3 +1,5 @@
+package basics
+
 fun main() {
     /** arithmetic operators **/
 
@@ -51,7 +53,7 @@ fun main() {
     // Post-increment (e.g., ++x)
     println("Post-increment")
     var count2 = 0
-    println(count2++)  // Output: 1 (uses original value then increment)
+    println(count2++)  // Output:0 (uses original value then increment)
     println(count2)  // Output: 1 (now incremented)
     println("/////////////////////////////////////////////")
 
@@ -72,7 +74,8 @@ fun main() {
     /** Assignment operators **/
     println("Assignment operators")
     var number = 5
-    number+=3 // equals: number = number + 3
+    // number+=3 // equals: number = number + 3
+    number += 3
     println(number) // Output: 8
     println("/////////////////////////////////////////////")
 

@@ -35,7 +35,7 @@ fun main() {
     The thread1.join() function in Kotlin (and in other programming languages that support threading, like Java)
     is used to pause the execution of the current thread until the thread on which join() is called has completed
     its execution. This is crucial in scenarios where you need to ensure that certain threads have finished their
-    work before continuing with further operations in the main thread or other threads.
+    work before continuing with further operations in the basics.loops.main thread or other threads.
     **/
 
     println("Final balance: ${account.balance}")

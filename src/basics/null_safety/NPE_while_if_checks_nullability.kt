@@ -1,3 +1,5 @@
+package basics.null_safety
+
 class MyClass {
     @Volatile //  meaning that writes to this field are immediately made visible to other threads.
     var b: String? = "Kotlin"
@@ -21,7 +23,7 @@ fun main() {
 
     // Start another thread to read the value of b
     Thread {
-        // threadSafeFunction()
+        // basics.null_safety.threadSafeFunction()
         threadSafeFunctionWithLet()
     }.start()
 }
@@ -36,7 +38,7 @@ fun threadSafeFunction() {
 
 fun threadSafeFunctionWithLet() {
     myObject.b?.let {
-        // Another thread could change myObject.b to null here
+        // Another thread could change basics.getMyObject.b to null here
         if (it.length > 0) {
             println("String of length ${it.length}")
         } else {

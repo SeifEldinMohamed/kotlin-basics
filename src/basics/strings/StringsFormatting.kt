@@ -1,3 +1,5 @@
+package basics.strings
+
 fun main() {
 
     // Formats a floating-point number to display with a + sign and four decimal places
@@ -18,13 +20,13 @@ fun main() {
 
     /** Mismatch Example (Incorrect Position of Arguments): **/
     // Swapping the order of arguments (age before name)
-    val result1 = formattedString.format(age, name)
-    println(result1)  // This will cause an error
+//    val result1 = formattedString.format(age, name)
+//    println(result1)  // This will cause an error
 
     /** Another Mismatch Example (Mismatch in Number of Arguments): **/
     // Only providing one argument (age) instead of two
-    val result2 = formattedString.format(age)  // This will cause an error
-    println(result2)
+//    val result2 = formattedString.format(age)  // This will cause an error
+//    println(result2)
 
 
 }

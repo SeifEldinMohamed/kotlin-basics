@@ -7,7 +7,7 @@ open class Vehicle(
     private val year: Int,
     private val model: String
 ) {
-     open fun printBasicDetails() { // child class can see it but an instance of child or parent class can't see it
+    open fun printBasicDetails() { // child class can see it but an instance of child or parent class can't see it
         println("Manufacturer: $name")
         println("Color: $color")
         println("Year: $year")
@@ -25,13 +25,23 @@ open class Car(
 ) : Vehicle(name, color, year, model) {
 
     override fun printBasicDetails() {
-        super.printBasicDetails()// can be removed
-        println("overrided")
+       // super.printBasicDetails()
+        println("bodyType = $bodyType")
     }
     fun printBodyType() {
         printBasicDetails()
         println("Body Style: $bodyType")
     }
+}
+
+open class Boat(
+    name: String,
+    color: String,
+    year: Int,
+    model: String,
+    private val numberOfLIfeJacket: Int
+) : Vehicle(name, color, year, model) {
+
 }
 
 class ElectricCar(
@@ -43,14 +53,26 @@ class ElectricCar(
 ):Car(name, color, year, model, bodyType){
     fun print() {
         printBasicDetails()
-        printBodyType()
+      //  printBodyType()
     }
 }
 
 fun main() {
-    val elantraSedan = Car("Hyundai", "Red", 2019, "Elantra", "Sedan") //creation of car Object
-    elantraSedan.printBasicDetails() //calling method to print details
+    val elantraSedan = Car("Hyundai", "Red", 2019, "Elantra", "Sedan") // creation of car Object
+    elantraSedan.printBodyType() //calling method to print details
    // elantraSedan.printBodyType() //calling method to print details
 
-   //  val vType: Vehicle = Car("Hyundai", "Red", 2019, "Elantra", "Sedan") // Type Casting
+     val vType: Vehicle = Car("Hyundai", "Red", 2019, "Elantra", "Sedan") // Type Casting
+    vType.printBasicDetails()
+
+//    val vehicles: List<Vehicle> = listOf(
+//        Car("Hyundai", "Red", 2019, "Elantra", "Sedan"),
+//        Vehicle("Tesla", "Black", 2023, "Model S"),
+//    )
+//
+//// Iterating over the collection and calling printBasicDetails() on each Vehicle
+//    for (vehicle in vehicles) {
+//        vehicle.printBasicDetails() // This would work with both Car and Vehicle instances
+//    }
+
 }

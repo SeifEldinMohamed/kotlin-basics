@@ -1,10 +1,12 @@
+package basics.loops
+
 fun main() {
     /** While**/
     println("While:")
     var i = 0
     while (i < 5) {
         println(i)
-        i++
+         i++
     }
     println("///////////////////////////////////////")
 
@@ -25,10 +27,10 @@ fun main() {
     }
 
     // for (i in 1..100) { ... }  // closed-ended range: includes 100
-    // for (i in 1..<100) { ... } // open-ended range: does not include 100
-    // for (x in 2..10 step 2) { ... }
-    // for (x in 10 downTo 1) { ... }
-    // (1..10).forEach { ... }
+    // for (i in 1 until 100) { } // open-ended range: does not include 100
+    // for (x in 2..10 step 2) { println(x) }
+    // for (x in 10 downTo 1 ) { println(x) }
+    // (1..10).forEach { println(it) }
     
     println("///////////////////////////////////////")
 
@@ -49,7 +51,7 @@ fun main() {
     println("Continue:")
 
     var k = 0
-    while (k < 10) {
+    while (k < 10) { 
         if (k == 4) {
             k++
             continue

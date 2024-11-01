@@ -17,7 +17,7 @@ class C():B(){}
 
 // Hierarchical Inheritance
 /**
-open class A(){}
+                    open class A(){}
 
 class B():A(){}     class C():A(){}     class D():A(){}
 

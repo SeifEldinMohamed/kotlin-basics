@@ -14,11 +14,13 @@ abstract class Animal(val name: String) {
 class Dog(name: String) : Animal(name) {
     override val testAbstract: String = "test abstract"
     override fun sound() = "Bark"
+
 }
 
 fun main() {
     val dog = Dog("Buddy")
     dog.info()  // Calls the method from the abstract class
     println(dog.sound())  // Calls the overridden method
+
     // val animal = Animal("test") // Error: Cannot create an instance of an abstract class
 }

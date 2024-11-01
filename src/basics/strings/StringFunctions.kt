@@ -1,26 +1,32 @@
+package basics.strings
+
+import java.util.Locale
 
 fun main() {
-//    val f = 2437823799
-//    println(f.javaClass)
 
 // Formats a floating-point number to display with a + sign and four decimal places
-    val floatNumber = String.format("%+.4f", 3.141592)
+    val floatNumber = String.format("Number %.4f", 3.141592)
     println(floatNumber)// +3.1416
 
-// Formats two strings one lowercase and other to uppercase, each taking one placeholder
-    val helloString = String.format("%s %S", "HELLO", "world")
+    val helloString = String.format("%s %S", "HELLO","world")
     println(helloString) // HELLO WORLD
+    val name10 = "seif"
+    for (char in name10) {
+        println(char)
+    }
 
+    val name7 = "fasdf"
+    println(name7[0])
 
     /** Length() **/
     val slogan = "Kotlin is awesome!"
     val sloganLength = slogan.length
-    println(sloganLength)  // Output: 17
+    println(sloganLength)  // Output: 18
 
     /** substring(startIndex, endIndex) **/
     val quote = "Seif Mohamed"
-    val subQuote = quote.substring(startIndex = 5, endIndex = 12) // Extracts "power"
-    println(subQuote)  // Output: power
+    val subQuote = quote.substring(startIndex = 0, endIndex = 4) // Extracts "Seif"
+    println(subQuote)  // Output: Seif
 
     /** take(n) **/
     val greeting = "Good morning!"
@@ -30,8 +36,8 @@ fun main() {
     /** toUpperCase() and toLowerCase() **/
 
     val city = "New York"
-    val upperCity = city.toUpperCase()
-    val lowerCity = city.toLowerCase()
+    val upperCity = city.uppercase(Locale.getDefault())
+    val lowerCity = city.lowercase(Locale.getDefault())
     println(upperCity)  // Output: NEW YORK
     println(lowerCity)  // Output: new york
 
@@ -51,17 +57,17 @@ fun main() {
     println(newGreeting)  // Output: Hello, Kotlin!
 
     /** split() **/
-    val colors = "red,green,blue"
-    val colorList = colors.split(",")
-    println(colorList)  // Output: [red, green, blue]
+    val colors = "red green. blue "
+    val colorList = colors.split(".")
+    println(colorList)  // Output: [red green,  blue ]
 
 
     /** indexOf(string) and lastIndexOf(string) **/
-    val sentence = "Kotlin is a powerful language."
+    val sentence = "powerful language powerful"
     val firstKotlin = sentence.indexOf(string = "Kotlin") // Index of first "Kotlin"
     val lastPowerful = sentence.lastIndexOf(string = "powerful") // Index of last "powerful"
-    println(firstKotlin)  // Output: 0
-    println(lastPowerful)  // Output: 14
+    println(firstKotlin)  // Output: -1
+    println(lastPowerful)  // Output: 18
 
 
     /**  startsWith(prefix) and endsWith(suffix) **/
@@ -77,6 +83,7 @@ fun main() {
     builder.append("world!")
     val finalString = builder.toString()
     println(finalString)  // Output: Hello, world!
-
+    builder[0] = 's'
+    println(builder.toString())  // Output: sello, world!
 
 }

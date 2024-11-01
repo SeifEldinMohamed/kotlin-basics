@@ -9,5 +9,5 @@ class Car {
 }
 
 // A property is basically a variable that belongs to the class.
-//
+
 // the name of a class must be start with an upper case letter.
