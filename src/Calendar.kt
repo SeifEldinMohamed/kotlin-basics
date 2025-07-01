@@ -21,7 +21,7 @@ fun main() {
 //    }
 //    val tommorow =  Calendar.getInstance()
 //    println(Calendar.DATE)
-//    tommorow.add(Calendar.DATE, 7)
+//    tommorow.functions.add(Calendar.DATE, 7)
 //    println(tommorow.get(Calendar.DAY_OF_MONTH))
 //    println(SimpleDateFormat("EEEE", Locale("ar")).format(tommorow.time))
 
@@ -30,15 +30,15 @@ fun main() {
 //    val daysOfWeek = ArrayList<String>()
 //
 //    for (i in 0..6 step 1) {
-//        currentDate.add(Calendar.DATE, 1)
+//        currentDate.functions.add(Calendar.DATE, 1)
 //        val day = currentDate.get(Calendar.DAY_OF_MONTH).toString()
 //        val month = currentDate.get(Calendar.MONTH) + 1
 //        val year = currentDate.get(Calendar.YEAR).toString()
-//        weekDate.add(MyDate(day, month.toString(), year))
-//        daysOfWeek.add(SimpleDateFormat("EEEE", Locale("ar")).format(currentDate.time))
+//        weekDate.functions.add(MyDate(day, month.toString(), year))
+//        daysOfWeek.functions.add(SimpleDateFormat("EEEE", Locale("ar")).format(currentDate.time))
 //        println("${weekDate.toString()} \n ${daysOfWeek.toString()}")
 //    }
-//     currentDate.add(Calendar.DATE, 7)
+//     currentDate.functions.add(Calendar.DATE, 7)
 //    val month = currentDate.get(Calendar.MONTH) + 1
 //    val date = MyDate(
 //            currentDate.get(Calendar.DAY_OF_MONTH).toString(),
@@ -53,7 +53,7 @@ fun main() {
 //    for (i in 0..6 step 1) {
 //           println(currenDate.get(Calendar.DATE))
 //           println((SimpleDateFormat("EEEE", Locale("ar")).format(currentDate.time)))
-//        currenDate.add(Calendar.DATE, 1)
+//        currenDate.functions.add(Calendar.DATE, 1)
 //
 //       }
 //
@@ -63,7 +63,7 @@ fun main() {
 //    calendar.set(Calendar.WEEK_OF_MONTH, currentWeek)
 //    for (i in 0..6) {
 //        daysOfWeek[i] = changeDateFormat(LocalDate(calendar.time))
-//        calendar.add(Calendar.DAY_OF_MONTH, 1)
+//        calendar.functions.add(Calendar.DAY_OF_MONTH, 1)
 //    }
 //    println( daysOfWeek)
 
@@ -136,8 +136,8 @@ fun main() {
 //            val year = date.year.toString()
 //            println("$day - $month - $year")
 //
-//            weekDate.add(MyDate(day, month, year))
-//            daysOfWeek.add(getDayNameInArabic(date.dayOfWeek.toString()))
+//            weekDate.functions.add(MyDate(day, month, year))
+//            daysOfWeek.functions.add(getDayNameInArabic(date.dayOfWeek.toString()))
 //            date = date.plusDays(1L)
 //        }
 //    }
@@ -149,7 +149,7 @@ fun main() {
 //    for (i in 0..6) {
 //        val calendar: Calendar = GregorianCalendar()
 //        calendar.set(2022, 4, 21)
-//        calendar.add(Calendar.DATE, i)
+//        calendar.functions.add(Calendar.DATE, i)
 //        val day = sdf.format(calendar.time)
 //        println(day)
 //
@@ -160,19 +160,19 @@ fun main() {
 //    for (i in 1..7 step 1) {
 //        val currentDate = GregorianCalendar()
 //        currentDate.set( 2022, month, 31)
-//        currentDate.add(Calendar.DATE, i)
+//        currentDate.functions.add(Calendar.DATE, i)
 //        val day = currentDate.get(Calendar.DAY_OF_MONTH).toString()
 //        val month = currentDate.get(Calendar.MONTH) + 1
 //        val year = currentDate.get(Calendar.YEAR).toString()
 //        println("$day - $month - $year")
-//        daysOfWeek.add(SimpleDateFormat("EEEE", Locale("ar")).format(currentDate.time))
+//        daysOfWeek.functions.add(SimpleDateFormat("EEEE", Locale("ar")).format(currentDate.time))
 //    println(daysOfWeek)
 //    }//////////////////////////////////////////
 
 //    val currentDate = GregorianCalendar()
 //    currentDate.set(2022, 0, 3)
 //        for (i in 0..6) {
-//            currentDate.add(Calendar.DATE,1)
+//            currentDate.functions.add(Calendar.DATE,1)
 //}
 //    println(currentDate.get(Calendar.DATE))
 //    println(currentDate.get(Calendar.HOUR))
@@ -192,9 +192,9 @@ fun main() {
 //    val daysName = ArrayList<String>()
 //    for (i in 0..600){
 //        for (i in 0..6) {
-//            days.add(format.format(calendar.time))
-//            daysName.add(SimpleDateFormat("EEEE", Locale("ar")).format(calendar.time))
-//            calendar.add(Calendar.DAY_OF_MONTH, 1)
+//            days.functions.add(format.format(calendar.time))
+//            daysName.functions.add(SimpleDateFormat("EEEE", Locale("ar")).format(calendar.time))
+//            calendar.functions.add(Calendar.DAY_OF_MONTH, 1)
 //
 //        }
 //        println(days.toString())

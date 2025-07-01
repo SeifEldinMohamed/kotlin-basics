@@ -8,9 +8,9 @@ enum class TrafficLight {
 
 // Since each enum is an instance of the enum class, it can be initialized as:
 enum class TrafficLight2(val color:String) {
-    RED("red"),
-    YELLOW("yellow"),
-    GREEN("green")
+    RED(color = "red"),
+    YELLOW(color = "yellow"),
+    GREEN(color = "green")
 }
 
 // Enum constants can declare their own anonymous classes with their corresponding methods,
@@ -62,4 +62,6 @@ fun main() {
     for (light in TrafficLight3.values()) {
         println("Light: ${light.color}, Signal: ${light.signal()}")
     }
+
+    println(currentLight.name)
 }

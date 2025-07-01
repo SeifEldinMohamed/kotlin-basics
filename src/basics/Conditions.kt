@@ -8,9 +8,9 @@ fun main() {
     }
     **/
 
-    if (20 > 18) {
+    if (20 > 18)
         println("20 is greater than 18")
-    }
+
 
     val x = 20
     val y = 18
@@ -53,7 +53,7 @@ fun main() {
     } else {
         println("Good evening.")
     }
-    // Outputs "Good evening."
+    // Outputs "Good day."
 
     /** If..Else Expressions **/
     val time3 = 20
@@ -61,6 +61,7 @@ fun main() {
     println(greeting)
     // Good Evening
 
+    /** When **/
     val day2 = 5
     when (day2) {
         1 -> {
@@ -71,18 +72,18 @@ fun main() {
         2 -> println("Tuesday")
         3 -> println("Wednesday")
         4 -> println("Thursday")
-        4-> println("Friday")
+        5-> println("Friday")
         6 -> println("Saturday")
         7 -> println("Sunday")
         else -> println("Invalid day.")
     }
 
-    /** When **/
-    val day = 1
-    val result = when (day) {
+    /** When Expression **/
+    val day = 3
+    val result:Any = when (day) {
         1 -> "Monday"
-        1 -> "Tuesday"
-        3 -> "Wednesday"
+        2 -> "Tuesday"
+        3 -> 3
         4 -> "Thursday"
         5 -> "Friday"
         6 -> "Saturday"

@@ -3,11 +3,10 @@ package set_and_map
 fun main() {
     // Immutable Set
     val numbers: Set<Int> = setOf(1, 5, 5, 3, 2, 4)
+    println(numbers)
 
     // Mutable Set
     val mutableNumbers: MutableSet<Int> = mutableSetOf(1, 5,  3, 2, 4)
-
-    println(numbers)
 
     mutableNumbers.add(6) // mutable set only
     mutableNumbers.remove(3) // mutable set only

@@ -1,5 +1,7 @@
 package basics.strings
 
+import java.util.Scanner
+
 fun main() {
 
     // Formats a floating-point number to display with a + sign and four decimal places
@@ -7,8 +9,9 @@ fun main() {
     println(floatNumber)// +3.1416
 
     // Formats two strings to uppercase, each taking one placeholder
-    val helloString = String.format("%S %S", "hello", "world")
+    val helloString = String.format("%S", "hello")
     println(helloString) // HELLO WORLD
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -21,12 +24,11 @@ fun main() {
     /** Mismatch Example (Incorrect Position of Arguments): **/
     // Swapping the order of arguments (age before name)
 //    val result1 = formattedString.format(age, name)
-//    println(result1)  // This will cause an error
+//   println(result1)  // This will cause an error
 
     /** Another Mismatch Example (Mismatch in Number of Arguments): **/
     // Only providing one argument (age) instead of two
 //    val result2 = formattedString.format(age)  // This will cause an error
 //    println(result2)
-
 
 }

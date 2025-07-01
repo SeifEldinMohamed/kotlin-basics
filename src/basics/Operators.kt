@@ -50,21 +50,21 @@ fun main() {
     println(count)  // Output: 1 (new value)
     println("/////////////////////////////////////////////")
 
-    // Post-increment (e.g., ++x)
+    // Post-increment (e.g., x++)
     println("Post-increment")
     var count2 = 0
     println(count2++)  // Output:0 (uses original value then increment)
     println(count2)  // Output: 1 (now incremented)
     println("/////////////////////////////////////////////")
 
-    // Pre-decrement (e.g., ++x)
+    // Pre-decrement (e.g., --x)
     println("Pre-decrement")
     var count3 = 5
     println(--count3)  // Output: 4 (decrements then print new value)
     println(count3)  // Output: 4 (new value)
     println("/////////////////////////////////////////////")
 
-    // Post-decrement (e.g., ++x)
+    // Post-decrement (e.g., x--)
     println("Post-decrement")
     var count4 = 5
     println(count4--)  // Output: 5 (uses original value then decrement)
@@ -74,7 +74,7 @@ fun main() {
     /** Assignment operators **/
     println("Assignment operators")
     var number = 5
-    // number+=3 // equals: number = number + 3
+    // number+=3 == number = number + 3
     number += 3
     println(number) // Output: 8
     println("/////////////////////////////////////////////")

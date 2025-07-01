@@ -29,6 +29,6 @@ fun main() {
     **/
 
 // Creating an instance using lambda
-    val isEven2 = IntPredicate { it % 2 == 0 }
+    val isEven2:IntPredicate = IntPredicate { i -> i % 2 == 0 }
     println("Is 7 even? - ${isEven2.accept(7)}")
 }

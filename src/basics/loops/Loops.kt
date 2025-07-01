@@ -6,7 +6,7 @@ fun main() {
     var i = 0
     while (i < 5) {
         println(i)
-         i++
+        i++
     }
     println("///////////////////////////////////////")
 
@@ -29,8 +29,8 @@ fun main() {
     // for (i in 1..100) { ... }  // closed-ended range: includes 100
     // for (i in 1 until 100) { } // open-ended range: does not include 100
     // for (x in 2..10 step 2) { println(x) }
-    // for (x in 10 downTo 1 ) { println(x) }
-    // (1..10).forEach { println(it) }
+    // for (x in 10 downTo 1) { println(x) }
+   // (1..10).forEach { println(it) }
     
     println("///////////////////////////////////////")
 
@@ -39,8 +39,8 @@ fun main() {
 
     var j = 0
     while (j < 10) {
-        println(j)
         j++
+        println(j)
         if (j == 4) {
             break
         }

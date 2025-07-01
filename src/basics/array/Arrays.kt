@@ -1,11 +1,11 @@
 package basics.array
 
 fun main() {
-    val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+    val cars: Array<String> = arrayOf("Volvo", "BMW", "Ford", "Mazda")
     println(cars[0]) // Outputs Volvo
     cars.first()
     cars[0] = "Opel"
-    println(cars[0])
+    println(cars[0]) // Opel
 
 
     if ("Volvo" in cars) {
@@ -18,8 +18,10 @@ fun main() {
     for (name in names) {
         println(name)
     }
+
     println(names.toString())
     println(names.javaClass.toString() + names.hashCode())
+
     val s = "ffff"
     println(s.javaClass.toString() + s.hashCode())
 
@@ -33,19 +35,17 @@ fun main() {
         Note: Even within the same program run, the JVM might choose a different memory location for the array due to various factors like memory management strategies and optimizations.
      **/
 
-    var riversArray = arrayOf("Nile", "Amazon", "Yangtze")
-    // Using the += assignment operation creates a new riversArray,
-    // copies over the original elements and adds "Mississippi"
-    riversArray += "Mississippi"
-    println(riversArray[3])
-    // Nile, Amazon, Yangtze, Mississippi
-
-//          val mixed:Array<Any> = arrayOf(1, "Seif", 2, "Mohamed",'k',4.23379)
-//            for (i in 0 until  mixed.size){
-//                val test = mixed[i].toString() + " Any"
-//                println(test)
-//            }
-
-
-
+//    var riversArray = arrayOf("Nile", "Amazon", "Yangtze")
+//    // Using the += assignment operation creates a new riversArray,
+//    // copies over the original elements and adds "Mississippi"
+//    riversArray += "Mississippi"
+//    println(riversArray[3])
+//    // Nile, Amazon, Yangtze, Mississippi
+//
+  val mixed:Array<Any> = arrayOf(1, "Seif", 2, "Mohamed",'k',4.23379)
+    for (i in 0 until  mixed.size){
+        val test = mixed[i].toString() + " Any"
+        println(test)
+    }
+    
 }

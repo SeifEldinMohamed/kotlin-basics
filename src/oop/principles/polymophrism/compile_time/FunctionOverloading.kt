@@ -12,7 +12,7 @@ fun add(a: Int, b: Int, c:Double): Int {
     return (a + b + c).toInt()
 }
 
-//fun add(a: Int, b: Int): Double {
+//fun functions.add(a: Int, b: Int): Double {
 //    return (a + b).toDouble()
 //}
 

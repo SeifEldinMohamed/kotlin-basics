@@ -1,10 +1,12 @@
 package oop
 
+import oop.companion_object.Constants
+
 fun main() {
 // Create a FordCar object of the Car class
     val fordCar = Car()
 
-// Access the properties and add some values to it
+// Access the properties and functions.add some values to it
     fordCar.brand = "Ford"
     fordCar.model = "Mustang"
     fordCar.year = 1969
@@ -21,9 +23,10 @@ fun main() {
     // (like passing parameters into a regular function).
     val mercedesCar = Car2(brand = "Mercedes", model = "C-Class", year = 2024, color = "blue")
     val bmwCar = Car2("BMW", "X5", 1999, "Black", speed = 200)
-    bmwCar.printCarDetails()
     mercedesCar.printCarDetails()
+    bmwCar.printCarDetails()
     // Tip: When a function is declared inside a class, it is known as a class function, or member function.
     //
     // Note: When an object of the class is created, it has access to all of the class functions.
+
 }

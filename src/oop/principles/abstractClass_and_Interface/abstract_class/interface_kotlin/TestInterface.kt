@@ -2,7 +2,7 @@ package oop.principles.abstractClass_and_Interface.abstract_class.interface_kotl
 
 interface Movable {
     val test:String // abstract by default
-    // val test2:String = "" // Error: Property initializers are not allowed in interfaces
+    /// val test2:String = "" // Error: Property initializers are not allowed in interfaces
     fun move() // abstract by default
 }
 
